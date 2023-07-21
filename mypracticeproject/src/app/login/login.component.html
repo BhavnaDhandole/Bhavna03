@@ -1,0 +1,44 @@
+<div class="container">
+    <button (click)="home()" class="home-btn">Home</button>
+    <h2 class="login">Login Screen</h2>
+    <form #loginForm='ngForm' class="form">
+        <label class="label">User Name</label><br>&nbsp;
+        <input type="text" class="inp-box" name="userName" ngModel
+        #userName="ngModel" pattern="[a-zA-Z]*$" minlength="5" maxlength="70"> <br>
+
+        <span class="span-err" *ngIf="userName.errors?.['pattern']&& userName.touched">
+        Please enter alphabets only
+        </span>
+        <span *ngIf="userName.errors?.['minlength']&& !userName.errors?.['pattern']" class="span-err">
+            User should enter atleast 5 alphabets   
+        </span>
+
+     <label class="label">Password</label><br>
+        <input type="text" class="inp-box" name="pass" ngModel
+        #password="ngModel" minlength="8"maxlength="16"
+        pattern="[A-Z]{1}[a-zA-Z0-9@#!$%&^*]{7}$" ><br>
+         <!--POON@4545 [A-Z]{4}[@]{1}[0-9]{4} 
+            CTGPP3424P [A-Z]{4}[P]{1}[0-9]{4}[A-Z]{1}-->
+            <span *ngIf="password.errors?.['minlength']" class="span-err"
+             Password should contain atleast 8 character>
+            </span>
+        <span *ngIf="password.errors?.['pattern']&& !password.errors?.['minlength']"class="span-err">
+            Please match the pattern
+        </span>
+        <label class="label">Confirm Password</label><br>
+        <input type="text" class="inp-box" name="confirmpass" ngModel
+        #confirmpass='ngModel'><br>
+
+        <label>Gender</label><br>
+        <input type="radio" required value="Male" name="gender" ngModel #gender='ngModel'>Male<br>
+        <input type="radio" required value="Female" name="gender" ngModel #gender='ngModel'>Female<br>
+        <input type="radio" required value="Other" name="gender" ngModel #gender='ngModel'>Other<br> 
+        <span class="span-err" *ngIf="gender.errors?.['required value']">Gender is required</span>
+         
+        <button class="submit"[disabled]="!loginForm.valid"
+        (click)="submit(loginForm.value)">Submit</button>
+
+    
+    </form>
+   
+</div>

@@ -21,10 +21,11 @@ export class HomeComponent {
      this.commonService.journey='owner'
      this.router.navigateByUrl('owner');
     }
-    // else(journey==='user'){
-    //   this.commonService.journey='user'
-    //   this.router.navigateByUrl('user');
-
-    // }
+    else(journey==='user') { 
+      this.commonService.journey='user'
+      this.router.navigateByUrl('user');
+    }
+      
+    }
   }
-}
+

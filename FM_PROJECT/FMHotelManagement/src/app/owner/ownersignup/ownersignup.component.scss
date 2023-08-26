@@ -1,7 +1,14 @@
 mat-form-field {
     width: 70%;
 }
+.btns{ 
+    padding: 6px 6px;
+    margin: 5px;
+}
 
-button {
-    margin-right: 20px;
+.container{
+    background-image: url('/assets/images/hotel1.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

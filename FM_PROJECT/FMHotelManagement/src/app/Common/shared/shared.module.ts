@@ -5,6 +5,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+
 
 
 @NgModule({
@@ -15,16 +17,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    HttpClientModule
   ],
+  
   exports:[
     MatCardModule,
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    HttpClientModule
+    
   ]
 })
 export class SharedModule { }

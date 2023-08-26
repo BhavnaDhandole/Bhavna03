@@ -1,8 +1,71 @@
 {
   "admin": [],
-   
-  "owner": [],
-  
+  "owner": [
+    {
+      "UserName": "bhavna",
+      "Email": "bhavna@gmail.com",
+      "Mobile": "995612303",
+      "Password": "bhavna",
+      "Gender": "female",
+      "id": 1
+    },
+    {
+      "UserName": "bhavna",
+      "Email": "bhavna@gmail.com",
+      "Mobile": "995612303",
+      "Password": "bhavna",
+      "Gender": "female",
+      "id": 2
+    },
+    {
+      "UserName": "",
+      "Email": "",
+      "Mobile": "",
+      "Password": "",
+      "Gender": "",
+      "id": 3
+    },
+    {
+      "UserName": "",
+      "Email": "",
+      "Mobile": "",
+      "Password": "",
+      "Gender": "",
+      "id": 4
+    },
+    {
+      "UserName": "satvik",
+      "Email": "satvik",
+      "Mobile": "123456789",
+      "Password": "1234",
+      "Gender": "male",
+      "id": 5
+    },
+    {
+      "UserName": "satvik",
+      "Email": "satvik",
+      "Mobile": "123456789",
+      "Password": "1234",
+      "Gender": "male",
+      "id": 6
+    },
+    {
+      "UserName": "",
+      "Email": "",
+      "Mobile": "",
+      "Password": "",
+      "Gender": "",
+      "id": 7
+    },
+    {
+      "UserName": "",
+      "Email": "",
+      "Mobile": "",
+      "Password": "",
+      "Gender": "",
+      "id": 8
+    }
+  ],
   "user": [],
-  "hotelDetails":[]
+  "hotelDetails": []
 }
